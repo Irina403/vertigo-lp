@@ -1,0 +1,303 @@
+
+<!--mixin--><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" media="all" href="styles/main_global.css"/>
+  </head>
+  <body>
+    <header> 
+      <div class="navbar fixed-top">
+        <div class="section_in">
+          <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines"><span class="line line1"></span><span class="line line2"></span><span class="line line3"></span></div>
+            <div class="logo-icon logo-icon-desc"><a href="index.html"> 
+                <div class="logo-icon__img"><img src="i/icons/logo.svg" alt=""></div></a></div>
+            <ul class="menu-items menu-toggle-open">
+              <li class="navItem"><a href="index.html">Главная</a></li>
+              <li class="navItem"><a href="about.html">О нас</a></li>
+              <li class="navItem"><a href="#">Услуги</a>
+                <ul class="navItem__submenu">
+                  <li class="navItem__submenu-item"> <a href="arenda-techniki.html">Аренда техники</a></li>
+                  <li class="navItem__submenu-item"> <a href="constructBuild.html">Строительство зданий</a></li>
+                  <li class="navItem__submenu-item"> <a href="dostavkaMaterialov.html">Доставка сыпучих материалов</a></li>
+                  <li class="navItem__submenu-item"> <a href="industrialConstruction.html">Промышленное строительство</a></li>
+                  <li class="navItem__submenu-item"> <a href="roadСonstruction.html">Строительство дорог</a></li>
+                </ul>
+              </li>
+              <li class="navItem"><a href="objects.html">Объекты</a></li>
+              <li class="navItem"><a href="arenda-techniki.html">Аренда техники</a>
+                <ul class="navItem__submenu">
+                  <li class="navItem__submenu-item"> <a href="arenda-samosval.html">Аренда самосвала </a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaTreiler.html">Аренда трейлера </a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaKatki.html">Аренда катков </a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaBuldozer.html">Аренда бульдозера </a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaComerc.html">Аренда легкового коммерческого транспорта </a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaExkavvator.html">Аренда экскаватора</a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaFrontPogruzchik.html">Аренда фронтального погрузчика </a></li>
+                  <li class="navItem__submenu-item"> <a href="arendaSpecTeh.html">Аренда спецтехники</a></li>
+                </ul>
+              </li>
+              <li class="navItem"><a href="prezentation.html">Презентация</a></li>
+              <li class="navItem"><a href="contacts.html">Контакты</a></li>
+              <div class="phoneBox phoneBox-mobile">
+                <div class="phoneBox__item">
+                  <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:8202598899">(8202)59-88-99</a></div>
+                  <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:+79517310840">8(951)731-08-40</a></div>
+                </div>
+              </div>
+            </ul>
+            <div class="phoneBox phoneBox-desck"> 
+              <div class="phoneBox__item">
+                <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:8202598899">(8202)59-88-99</a></div>
+                <div class="phoneBox__item-tel"><img src="i/icons/icon-phone.svg" alt=""><a href="tel:+79517310840">8(951)731-08-40</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <section>
+          <div class="section_in">
+            <div class="aboutPage indentation">
+              <div class="titleBlock">
+                <h2>Доставка сыпучих <br> материалов</h2>
+                <div class="titleBlock__lines"></div>
+              </div>
+              <div class="calcBlock"> 
+                <div class="calcBlock__ttitle">Расчёт стоимости <br> транспортировки</div>
+                <div class="calcBlock__row"> 
+                  <div class="calcBlock__col">
+                    <div class="calcBlock__titleCol calcBlock__titleCol-textRight">Расчет в кубах</div>
+                    <div class="calcBlock__box">
+                      <p class="calcBlock__inputTitle">Выберите материал</p>
+                      <select id="material">
+                        <option value="pgs">ПГС</option>
+                        <option value="pesok">Песок</option>
+                        <option value="grunt">Грунт растительный</option>
+                        <option value="shlak1">Шлак доменный фр. 20-40</option>
+                        <option value="shlak2">Шлак доменный несорт. фр. 0-400</option>
+                        <option value="sheben1">Щебень сталеплав.фр 0-10</option>
+                        <option value="sheben2">Щебень сталеплав.фр 10-40</option>
+                        <option value="sheben3">Щебень сталеплав.фр 40-120</option>
+                        <option value="gravi">Гравий природный фр 5-20</option>
+                        <option value="opilki">Опилки</option>
+                      </select>
+                      <p class="calcBlock__inputTitle">Объем в кубах</p>
+                      <input class="calcBlock__input" type="text" id="volume" placeholder="">
+                      <p class="calcBlock__inputTitle">Расстояние в км</p>
+                      <input class="calcBlock__input" type="text" id="distance" placeholder="">
+                      <button class="calcBlock__button" onclick="raschitat();">Рассчитать </button>
+                      <div id="stoimost"></div>
+                    </div>
+                  </div>
+                  <div class="calcBlock__col">
+                    <div class="calcBlock__titleCol">Расчет в тоннах</div>
+                    <div class="calcBlock__box-right">
+                      <p class="calcBlock__inputTitle">Выберите материал</p>
+                      <select id="material">
+                        <option value="pgs">ПГС</option>
+                        <option value="pesok">Песок</option>
+                        <option value="grunt">Грунт растительный</option>
+                        <option value="shlak1">Шлак доменный фр. 20-40</option>
+                        <option value="shlak2">Шлак доменный несорт. фр. 0-400</option>
+                        <option value="sheben1">Щебень сталеплав.фр 0-10</option>
+                        <option value="sheben2">Щебень сталеплав.фр 10-40</option>
+                        <option value="sheben3">Щебень сталеплав.фр 40-120</option>
+                        <option value="gravi">Гравий природный фр 5-20</option>
+                        <option value="opilki">Опилки</option>
+                      </select>
+                      <p class="calcBlock__inputTitle">Кол-во тонн</p>
+                      <input class="calcBlock__input" type="text" id="volume" placeholder="">
+                      <p class="calcBlock__inputTitle">Расстояние в км.</p>
+                      <input class="calcBlock__input" type="text" id="distance" placeholder="">
+                      <button class="calcBlock__button" onclick="raschitat();">Рассчитать </button>
+                      <div id="stoimost"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calcBlock__row"> 
+                  <div class="calcBlock__footer">Cтоимость перевозки может быть скорректирована по соглашению сторон в зависимости от факторов влияющих на логистику перевозки, от обьёма заказа услуги и от плеча перевозки. Для определения окончательной цены необходимо связаться с коммерческим отделом</div>
+                </div>
+              </div>
+              <div class="priceBlock"> 
+                <div class="priceBlock__title">Прайс </div>
+                <div class="priceBlock__text">стоимость материала с доставкой <br> в черте г.Череповец</div>
+                <div class="table-wrap"> 
+                  <table> 
+                    <thead> 
+                      <tr> 
+                        <th>Наименование материала</th>
+                        <th>Еденица измерения</th>
+                        <th>Насыпная плотность</th>
+                        <th>Цена за ед.измерения руб. с НДС до 100</th>
+                        <th>Цена за ед.измерения руб. с НДС от 100 до 1000</th>
+                        <th>Цена за ед.измерения руб. с НДС от 1000 и выше</th>
+                      </tr>
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <td data-label="Наименование материала">ПГС</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,5</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">280</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">270</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">250</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Песок</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,5</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">310</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">300</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">280</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Грунт растительный</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,25</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">500</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">480</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">450</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Шлак доменный фр. 20-40</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,17</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">600</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">595</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">585</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Шлак доменный фр. 40-70</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,17</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">535</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">525</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">515</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Шлак доменный несорт. фр. 0-400</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,4</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">431</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">421</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">411</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Щебень сталеплав. Фр. 0-10</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,89</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">296</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">286</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">276</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Щебень сталеплав. Фр. 10-40</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,38</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">376</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">366</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">356</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Щебень сталеплав. Фр. 40-120</td>
+                        <td data-label="Еденица измерения">тн</td>
+                        <td data-label="Насыпная плотность">1,73</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">306</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">296</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">286</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Гравий природный фр. 5-20</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">1,43</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">1150</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">1140</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">1130</td>
+                      </tr>
+                      <tr> 
+                        <td data-label="Наименование материала">Гравий природный фр. 5-20</td>
+                        <td data-label="Еденица измерения">м3</td>
+                        <td data-label="Насыпная плотность">0,25</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС до 100">220</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 100 до 1000">210</td>
+                        <td data-label="Цена за ед.измерения руб. с НДС от 1000 и выше">200</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="navFooter"> 
+          <ul class="navFooter__list"> 
+            <p>Услуги</p>
+            <div class="navFooter__box">
+              <li class="navFooter__item"> <a href="arenda-techniki.html"> Аренда техники</a></li>
+              <li class="navFooter__item"> <a href="constructBuild.html"> Строительство зданий</a></li>
+              <li class="navFooter__item"> <a href="dostavkaMaterialov.html"> Доставка сыпучих материалов</a></li>
+              <li class="navFooter__item"> <a href="industrialConstruction.html"> Промышленное строительство</a></li>
+              <li class="navFooter__item"> <a href="roadСonstruction.html"> Строительство дорог</a></li>
+            </div>
+          </ul>
+          <ul class="navFooter__list"> 
+            <p>контакты</p>
+            <div class="navFooter__box">
+              <li class="navFooter__item">
+                <div class="navFooter__item-contact"><img src="../i/icons/icon-phone-white.svg" alt=""><a href="#">(8202) 59-88-99</a></div>
+                <div class="navFooter__item-contact"><img src="../i/icons/icon-phone-white.svg" alt=""><a href="#">8(951)731-08-40</a></div>
+                <div class="navFooter__item-contact"><img src="../i/icons/icon-map-white.svg" alt="">
+                  <p>г. Череповец, ул.Стройиндустрии, д. 13</p>
+                </div>
+                <div class="navFooter__item-contact"><img src="../i/icons/icon-mail.svg" alt=""><a href="mailto:dskvektor@mail.ru">dskvektor@mail.ru</a></div>
+              </li>
+            </div>
+          </ul>
+          <ul class="navFooter__list"> 
+            <p class="navFooter__titleRight">меню</p>
+            <div class="navFooter__box navFooter__titleRigh">
+              <li class="navFooter__item"> <a href="index.html"> Главная</a></li>
+              <li class="navFooter__item"> <a href="about.html"> О компании</a></li>
+              <li class="navFooter__item"> <a href="objects.html"> Объекты</a></li>
+              <li class="navFooter__item"> <a href="arenda-techniki.html"> Аренда техники</a></li>
+              <li class="navFooter__item"> <a href="contacts.html"> Контакты</a></li>
+            </div>
+          </ul>
+        </div>
+        <div class="navFooter__line"> 
+          <div class="navFooter__footer">
+            <div class="navFooter__footerText"> 
+              <p>Авторское право © 2016.</p>
+            </div>
+            <div class="navFooter__footerText-copyright"> 
+              <p>Все права защищены. Строительная компания "Вектор"</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-3.6.0.min.js"><\/script>')</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script>window.TweenMax || document.write('<script src="js/gsap.min.js"><\/script>')</script>
+    <script type="text/javascript">window.productionStatus = 'development';</script>
+    <script src="js/main.js"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/wpcc.js"></script>
+  </body>
+</html>
