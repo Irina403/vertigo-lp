@@ -1,0 +1,48 @@
+extends _layout
+block content_block
+    section
+        .section_in
+            .arenda.indentation__page
+                .titleBlock
+                    h2 АРЕНДА <br> экскаватора
+                    .titleBlock__lines
+
+                .arenda__block 
+                    .arenda__row 
+                        .arenda__item 
+                            .arenda__title Bobcat s530
+                                //- p  (V ковша 1 м3, вес 21.5т, глубина копки 6.62м)
+                            img(src="../i/services/arenda/frontPogruzchik/img-1.png", alt="")
+                        .arenda__item 
+                            .arenda__title LiuGong
+                                //- p (V ковша 1 м3, вес 14.8т, глубина копки 5.19м)
+                            img(src="../i/services/arenda/frontPogruzchik/img-2.png", alt="")
+                        .arenda__item 
+                            .arenda__title МТЗ-82
+                                p (щётка)
+                            img(src="../i/services/arenda/frontPogruzchik/img-3.png", alt="")
+                        .arenda__item 
+                            .arenda__title Амкодор 352
+                                p (V ковша 5м3)
+                            img(src="../i/services/arenda/frontPogruzchik/img-4.png", alt="")
+                        .arenda__item 
+                            .arenda__title NEW Holland
+                                p (крабовый ход, сдвижная лопата)
+                            img(src="../i/services/arenda/frontPogruzchik/img-5.png", alt="")
+    
+                
+            .contactForm 
+                .contactForm__title Форма заказа
+                .contactForm__row
+                    .contactForm__col.contactForm__col-border
+                        form(action="#")
+                            input(placeholder="Ваше имя").inputStyle 
+                            input(placeholder="Ваш email").inputStyle 
+                            input(placeholder="Ваш телефон").inputStyle 
+                            input(placeholder="Сообщение").inputStyle.inputStyle__message 
+                            .contactForm__button.button Отправить
+                    .contactForm__col
+                        .rightCol 
+                            p Ознакомьтесь с нашими ценами 
+                            .rightCol__button СКАЧАТЬ ПРАЙС    
+            

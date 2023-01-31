@@ -1,0 +1,152 @@
+extends _layout
+block content_block
+    section
+        .section_in
+            .aboutPage.indentation
+                .titleBlock
+                    h2 Доставка сыпучих <br> материалов
+                    .titleBlock__lines
+                .calcBlock 
+                    .calcBlock__ttitle Расчёт стоимости <br> транспортировки
+                    .calcBlock__row 
+                        .calcBlock__col
+                            .calcBlock__titleCol.calcBlock__titleCol-textRight Расчет в кубах
+                            .calcBlock__box
+                                p.calcBlock__inputTitle Выберите материал
+                                select#material
+                                    option(value="pgs") ПГС
+                                    option(value="pesok") Песок
+                                    option(value="grunt") Грунт растительный
+                                    option(value="shlak1") Шлак доменный фр. 20-40
+                                    option(value="shlak2") Шлак доменный несорт. фр. 0-400
+                                    option(value="sheben1") Щебень сталеплав.фр 0-10
+                                    option(value="sheben2") Щебень сталеплав.фр 10-40
+                                    option(value="sheben3") Щебень сталеплав.фр 40-120
+                                    option(value="gravi") Гравий природный фр 5-20
+                                    option(value="opilki") Опилки
+                                p.calcBlock__inputTitle Объем в кубах
+                                input.calcBlock__input(type="text" id="volume" placeholder="")
+                                p.calcBlock__inputTitle Расстояние в км
+                                input.calcBlock__input(type="text" id="distance" placeholder="")
+                                button.calcBlock__button(onclick="raschitat();") Рассчитать 
+                                div#stoimost
+
+                        .calcBlock__col
+                            .calcBlock__titleCol Расчет в тоннах
+                            .calcBlock__box-right
+                                p.calcBlock__inputTitle Выберите материал
+                                select#material
+                                    option(value="pgs") ПГС
+                                    option(value="pesok") Песок
+                                    option(value="grunt") Грунт растительный
+                                    option(value="shlak1") Шлак доменный фр. 20-40
+                                    option(value="shlak2") Шлак доменный несорт. фр. 0-400
+                                    option(value="sheben1") Щебень сталеплав.фр 0-10
+                                    option(value="sheben2") Щебень сталеплав.фр 10-40
+                                    option(value="sheben3") Щебень сталеплав.фр 40-120
+                                    option(value="gravi") Гравий природный фр 5-20
+                                    option(value="opilki") Опилки
+                                p.calcBlock__inputTitle Кол-во тонн
+                                input.calcBlock__input(type="text" id="volume" placeholder="")
+                                p.calcBlock__inputTitle Расстояние в км.
+                                input.calcBlock__input(type="text" id="distance" placeholder="")
+                                button.calcBlock__button(onclick="raschitat();") Рассчитать 
+                                div#stoimost
+                    .calcBlock__row 
+                        .calcBlock__footer Cтоимость перевозки может быть скорректирована по соглашению сторон в зависимости от факторов влияющих на логистику перевозки, от обьёма заказа услуги и от плеча перевозки. Для определения окончательной цены необходимо связаться с коммерческим отделом
+                    
+                .priceBlock 
+                    .priceBlock__title Прайс 
+                    .priceBlock__text стоимость материала с доставкой <br> в черте г.Череповец
+
+                    .table-wrap 
+                        table 
+                            thead 
+                                tr 
+                                    th Наименование материала
+                                    th Еденица измерения
+                                    th Насыпная плотность
+                                    th Цена за ед.измерения руб. с НДС до 100
+                                    th Цена за ед.измерения руб. с НДС от 100 до 1000
+                                    th Цена за ед.измерения руб. с НДС от 1000 и выше
+                            tbody 
+                                tr 
+                                    td(data-label="Наименование материала") ПГС
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 1,5
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 280
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 270
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 250
+                                tr 
+                                    td(data-label="Наименование материала") Песок
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 1,5
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 310
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 300
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 280
+                                tr 
+                                    td(data-label="Наименование материала") Грунт растительный
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 1,25
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 500
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 480
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 450
+                                tr 
+                                    td(data-label="Наименование материала") Шлак доменный фр. 20-40
+                                    td(data-label="Еденица измерения") тн
+                                    td(data-label="Насыпная плотность") 1,17
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 600
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 595
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 585
+                                tr 
+                                    td(data-label="Наименование материала") Шлак доменный фр. 40-70
+                                    td(data-label="Еденица измерения") тн
+                                    td(data-label="Насыпная плотность") 1,17
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 535
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 525
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 515
+                                tr 
+                                    td(data-label="Наименование материала") Шлак доменный несорт. фр. 0-400
+                                    td(data-label="Еденица измерения") тн
+                                    td(data-label="Насыпная плотность") 1,4
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 431
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 421
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 411
+                                tr 
+                                    td(data-label="Наименование материала") Щебень сталеплав. Фр. 0-10
+                                    td(data-label="Еденица измерения") тн
+                                    td(data-label="Насыпная плотность") 1,89
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 296
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 286
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 276
+                                tr 
+                                    td(data-label="Наименование материала") Щебень сталеплав. Фр. 10-40
+                                    td(data-label="Еденица измерения") тн
+                                    td(data-label="Насыпная плотность") 1,38
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 376
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 366
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 356
+                                tr 
+                                    td(data-label="Наименование материала") Щебень сталеплав. Фр. 40-120
+                                    td(data-label="Еденица измерения") тн
+                                    td(data-label="Насыпная плотность") 1,73
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 306
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 296
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 286
+                                tr 
+                                    td(data-label="Наименование материала") Гравий природный фр. 5-20
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 1,43
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 1150
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 1140
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 1130
+                                tr 
+                                    td(data-label="Наименование материала") Гравий природный фр. 5-20
+                                    td(data-label="Еденица измерения") м3
+                                    td(data-label="Насыпная плотность") 0,25
+                                    td(data-label="Цена за ед.измерения руб. с НДС до 100") 220
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 100 до 1000") 210
+                                    td(data-label="Цена за ед.измерения руб. с НДС от 1000 и выше") 200
+
+
+

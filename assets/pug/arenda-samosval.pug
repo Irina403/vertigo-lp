@@ -1,0 +1,60 @@
+extends _layout
+block content_block
+    section
+        .section_in
+            .arenda.indentation__page
+                .titleBlock
+                    h2 аренда <br> самосвала 
+                    .titleBlock__lines
+
+                .arenda__block 
+                    .arenda__row 
+                        .arenda__item 
+                            .arenda__title Scania 
+                                p (22м3; гп 35т)
+                            img(src="../i/services/arenda/samosval/img-1.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title Scania 8х4
+                                p (20м3; гп 31т)
+                            img(src="../i/services/arenda/samosval/img-2.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title Volvo FMX 6х4 
+                                p (20м3; гп 31т, 25т)
+                                p (16м3, 18м3; гп 25т)
+                            img(src="../i/services/arenda/samosval/img-3.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title Volvo FMX 6х4
+                                p (18м3; гп 25т)
+                            img(src="../i/services/arenda/samosval/img-4.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title Volvo FMX 8х4
+                                p (20м3; гп 31т; 25м3; гп 18т)
+                            img(src="../i/services/arenda/samosval/img-5.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title Volvo FMX 8х4
+                                p (22м3; гп 35т)
+                            img(src="../i/services/arenda/samosval/img-6.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title КАМАЗ 6520
+                                p (18м3; гп 28т)
+                            img(src="../i/services/arenda/samosval/img-7.jpg", alt="")
+                        .arenda__item 
+                            .arenda__title КАМАЗ 65115
+                                p (гп 15т, 10м3; 15м3 )
+                            img(src="../i/services/arenda/samosval/img-8.jpg", alt="")
+
+            .contactForm 
+                .contactForm__title Форма заказа
+                .contactForm__row
+                    .contactForm__col.contactForm__col-border
+                        form(action="send.php" method="post")
+                            input(type="text" name="name" placeholder="Ваше имя").inputStyle 
+                            input(type="text" name="email" placeholder="Ваш email").inputStyle 
+                            input(type="text" name="tel" placeholder="Ваш телефон").inputStyle 
+                            input(type="text" name="message" placeholder="Сообщение").inputStyle.inputStyle__message 
+                            input(type="submit" value="Отправить").contactForm__button.button 
+                    .contactForm__col
+                        .rightCol 
+                            p Ознакомьтесь с нашими ценами 
+                            .rightCol__button СКАЧАТЬ ПРАЙС    
+            

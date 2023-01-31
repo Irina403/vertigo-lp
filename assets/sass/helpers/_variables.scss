@@ -1,0 +1,70 @@
+// Global 
+$header: 10rem;
+$footer: 20rem;
+// Mobile
+$header_mob: 10rem;
+$footer_mob: 10rem;
+//---------------------------------------------fonts
+$font_path: "../fonts/";
+$font_1: 'akzidenzgroteskpro-boldex',
+sans-serif;
+$font_2: 'Gilroy-Medium',
+sans-serif;
+$font_3: 'akzidenzgroteskpro-ext',
+sans-serif;
+$font_4: 'akzidenzgroteskpro-mdex',
+sans-serif;
+$font_5: 'akzidenzgroteskpro-regular',
+sans-serif;
+$font_6: 'akzidenzgroteskpro-lightex',
+sans-serif;
+// $font_4: 'Montserrat-Black',
+// sans-serif;
+// $font_5: 'Montserrat-Medium',
+// sans-serif;
+$font_size_base: 1.8rem;
+//---------------------------------------------fonts###
+//---------------------------------------------colors
+$white: #fff;
+$black: #303030;
+$gray: #6C6C6C;
+$yellow: #F3C60A;
+$gold: #ffe100;
+$color3:#8A60FF;
+$gradient: linear-gradient(178.58deg, #FF5C01 19.37%, #FF214F 79.34%);
+$gradient1: linear-gradient(110.58deg, #4429EB 0%, #AE6FFF 69.85%, #FFE07D 95.84%);
+$color_text_base: $black;
+$color_link_base: $gold;
+$body_bg: $black;
+//---------------------------------------------colors###
+//---------------------------------------------z-index
+$z-index: ( popup: 101, header: 100, footer: 100);
+//---------------------------------------------z-index###
+//---------------------------------------------layout
+$page_width: 148rem;
+//---------------------------------------------layout###
+//---------------------------------------------global values
+$gl_radius:.5rem;
+//---------------------------------------------global values###
+//---------------------------------------------media points
+$point: 1900px;
+$point_0: 1680px;
+$point_1: 1400px;
+$point_2: 1200px;
+$point_3: 1023px;
+$point_4: 768px;
+$point_5: 640px;
+$point_6: 480px;
+$point_7: 375px;
+$point_8: 320px;
+//---------------------------------------------media points
+//---------------------------------------------forms
+$input_height: 4rem;
+$input_offset: 0 2rem;
+$input_font_size: $font_size_base;
+$input_border_color: #ccc;
+$input_border_color_active: $black;
+$input_placeholder_color: rgba($black, .4);
+$input_text_color: $black;
+$input_radius: $gl_radius;
+//---------------------------------------------forms###

@@ -1,0 +1,130 @@
+.btn-all {
+    border-radius: 4rem;
+    background: $color3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transition: background 0.5s, box-shadow 0.5s;
+    a {
+        text-align: center;
+        color: $white;
+        text-decoration: none;
+        // font-size: 1.4rem;
+        font-family: $font_1;
+    }
+}
+
+// .btn-all:hover {
+//     background: $color3;
+//     box-shadow: 4px 30px 35px rgba(255, 92, 0, 0.25);
+// }
+body {
+    height: 100%;
+}
+
+h1 {
+    padding-top: 307px;
+    font-size: 5.6rem;
+    font-family: $font_1;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 7rem;
+    color: $white;
+    @include bp($point_2) {
+        padding-top: 10rem;
+    }
+    @include bp($point_4) {
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }
+    @include bp($point_5) {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+}
+
+h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    @include bp($point_5) {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #fff;
+    @include bp($point_5) {
+        font-size: 2.2rem;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    font-family: $font_6;
+}
+
+span {
+    font-family: $font_1 !important;
+}
+
+.mobile-indent {
+    @include bp($point_4) {
+        margin-top: 20px;
+    }
+}
+
+.title-block {
+    font-size: 4rem;
+    font-family: $font_1;
+    color: $black;
+    @include bp($point_4) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+.title-block span {
+    font-family: $font_2;
+}
+
+.title-block::after {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    content: '';
+    display: block;
+    width: 4.8rem;
+    height: 0.4rem;
+    // background-color: $color3;
+}
+
+span {
+    font-family: $font_2;
+}
+
+.button {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $yellow;
+    width: 25rem;
+    height: 6rem;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-family: $font_4;
+    a {
+        color: #000;
+        text-decoration: none;
+        font-size: 2rem;
+        margin-right: 1.7rem;
+    }
+}

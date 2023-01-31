@@ -1,0 +1,52 @@
+extends _layout
+block content_block
+    section
+        .section_in
+            .arenda.indentation__page
+                .titleBlock
+                    h2 АРЕНДА <br> бульдозера
+                    .titleBlock__lines
+
+                .arenda__block 
+                    .arenda__row 
+                        .arenda__item 
+                            .arenda__title Т-170
+                                //- p (г/п 21 тн)
+                            img(src="../i/services/arenda/buldozer/img-1.jpeg", alt="")
+                        .arenda__item 
+                            .arenda__title Т-170
+                                p (с рыхлителем)
+                            img(src="../i/services/arenda/buldozer/img-2.jpeg", alt="")
+                        .arenda__item 
+                            .arenda__title CAT DN6
+                                p (с рыхлителем)
+                            img(src="../i/services/arenda/buldozer/img-3.jpeg", alt="")
+                        .arenda__item 
+                            .arenda__title Т-170
+                                p (болотный)
+                            img(src="../i/services/arenda/buldozer/img-4.jpeg", alt="")
+                        .arenda__item 
+                            .arenda__title Liebherr R744 
+                                p (болотный, с рыхлителем)
+                            img(src="../i/services/arenda/buldozer/img-5.jpeg", alt="")
+                        .arenda__item 
+                            .arenda__title дт-75
+                                p 
+                            img(src="../i/services/arenda/buldozer/img-6.png", alt="")
+                      
+
+            .contactForm 
+                .contactForm__title Форма заказа
+                .contactForm__row
+                    .contactForm__col.contactForm__col-border
+                        form(action="#")
+                            input(placeholder="Ваше имя").inputStyle 
+                            input(placeholder="Ваш email").inputStyle 
+                            input(placeholder="Ваш телефон").inputStyle 
+                            input(placeholder="Сообщение").inputStyle.inputStyle__message 
+                            .contactForm__button.button Отправить
+                    .contactForm__col
+                        .rightCol 
+                            p Ознакомьтесь с нашими ценами 
+                            .rightCol__button СКАЧАТЬ ПРАЙС    
+            

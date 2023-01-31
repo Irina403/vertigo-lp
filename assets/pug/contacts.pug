@@ -1,0 +1,59 @@
+extends _layout
+block content_block
+    section
+        .section_in
+            .aboutPage.indentation__page
+                .titleBlock
+                    h2 контакты
+                    .titleBlock__lines
+
+                .contacts 
+                    .contacts__row 
+                        .contacts__col 
+                            .contacts__textName Юридический адрес: 
+                            .contacts__text 
+                                img(src="/i/icons/icon-map.svg", alt="")
+                                p 162 600, Россия, Вологодская область,  г.Череповец,
+                            
+                            .contacts__textName Телефон/факс:
+                            .contacts__text 
+                                img(src="/i/icons/icon-phone.svg", alt="")
+                                p (8202) 59-65-89
+                            .contacts__text 
+                                img(src="/i/icons/icon-phone.svg", alt="")
+                                p 59-64-87
+                            .contacts__text 
+                                img(src="/i/icons/icon-phone.svg", alt="")
+                                p 59-81-30
+                        
+                        .contacts__col 
+                            .contacts__textName Почтовый адрес: 
+                            .contacts__text 
+                                img(src="/i/icons/icon-map.svg", alt="")
+                                p 162 611, Россия, Вологодская область,  г.Череповец, ул.Стройиндустрии, д. 13
+                            
+                            .contacts__textName Почта
+                            .contacts__text.contacts__text-mail 
+                                img(src="/i/icons/mail-black.svg", alt="")
+                                a(href="mailto:dskvektor@mail.ru") dskvektor@mail.ru 
+
+                    .contacts__map
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af4bca048d6ddab3034269bbd7117d0f97c1db2c5223ba2d64d42d6953c5925e2&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+                .feedbackForm
+                    .feedbackForm__title обратная <br> связь
+                    .feedbackForm
+                        form.feedbackForm__form(action="#")
+                            input(placeholder="Ваше имя").feedbackForm__input
+                            input(placeholder="Ваш email").feedbackForm__input
+                            input(placeholder="Ваш телефон").feedbackForm__input
+                            .feedbackForm__box 
+                                div
+                                    input(type="radio" name="info" value="client").feedbackForm__radio
+                                    label(for="client") Клиент
+                                div
+                                    input(type="radio" name="info" value="sotrudnik").feedbackForm__radio
+                                    label(for="client") Сотрудник
+                            input(placeholder="Сообщение").feedbackForm__input.feedbackForm__input-message
+                            .contactForm__button.button Отправить
+                    
