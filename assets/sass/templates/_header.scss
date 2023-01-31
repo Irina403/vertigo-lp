@@ -27,7 +27,6 @@ header {
     width: 100%;
     background: transparant;
     color: #000;
-    background-color: $yellow;
     display: flex;
     align-items: center;
     @include bp($point_2) {
@@ -55,11 +54,7 @@ header {
     }
 }
 
-// .navItem {
-//     line-height: 45px;
-// }
 .navItem__submenu {
-    // padding: 10px;
     font-weight: 300;
     text-transform: none;
     display: none;
