@@ -73,7 +73,11 @@
         }
         
         .vertigoBlock {
-            margin-top: 115px;
+            position: relative;
+            background-image: url(../i/elipse-elem.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-top: 140px;
             &__text {
                 font-size: 1.8rem;
                 font-family: $font_2;
@@ -126,6 +130,30 @@
             }
         }
         
+        .decor-right {
+            position: relative;
+            &__img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        
+        .decor-left {
+            position: relative;
+            &__img {
+                position: absolute;
+                top: -150px;
+                left: 0;
+            }
+        }
+        
+        // .decor-right::after {
+        //     top: 0;
+        //     right: 0;
+        //     position: absolute;
+        //     content: url(../i/icons/decor-elem-right.png);
+        // }
         .vertigoCause {
             margin-top: 115px;
             &__col {
