@@ -1,5 +1,219 @@
 extends _layout
 block content_block
 	section.main
-		.main__title 
-			h1 Практическое приложение от головокружения
+		.section_in
+			.main__title 
+				h1 Практическое <span> приложение </span> от головокружения
+				p Технологии помогут вернуть <br> равновесие в вашу жизнь.
+
+			.advantages-main
+				.advantages-main__bg 
+					.advantages-main__text <b> Потеря равновесия, неустойчивость, дезориентация в пространстве - </b> всё это проявления головокружения или вертиго, подобные проявления вызывают массу переживаний
+					.advantages-main__row 
+						.advantages-main__col 
+							.advantages-main__icon 
+								img(src="../i/icons/main-i-1.svg", alt="")
+							.advantages-main__blockTxt снижают <br> качество жизни
+						.advantages-main__col 
+							.advantages-main__icon 
+								img(src="../i/icons/main-i-2.svg", alt="")
+							.advantages-main__blockTxt ограничивают <br> социальную активность
+						.advantages-main__col 
+							.advantages-main__icon 
+								img(src="../i/icons/main-i-3.svg", alt="")
+							.advantages-main__blockTxt угнетают <br> психологически
+			//- .main__col-right 
+			//- 	img(src="../i/girl-main.png", alt="")
+	.section_in 
+		.vertigoBlock
+			.vertigoBlock__title 
+				h2 Головокружение
+				.vertigoBlock__text второй по распространенности <br> <b> неврологический симптом </b> после головной боли
+			.vertigoBlock__row 
+				.vertigoBlock__item 
+					.vertigoBlock__item-img
+						img(src="../i/icons/i-1.svg", alt="")
+					.vertigoBlock__item-text Ежегодно <br>возникает у <b> 5% <br> людей </b> в мире
+				.vertigoBlock__item 
+					.vertigoBlock__item-img
+						img(src="../i/icons/i-2.svg", alt="")
+					.vertigoBlock__item-text около <b> 20% людей испытывают </b> хотя бы раз в жизни
+				.vertigoBlock__item 
+					.vertigoBlock__item-img
+						img(src="../i/icons/i-3.svg", alt="")
+					.vertigoBlock__item-text основная жалоба у <b> 15% пациентов </b>, поступающих на скорой в стационар
+			.vertigoBlock__row.vertigoBlock__row2
+				.vertigoBlock__item2 
+					.vertigoBlock__item2-img 
+						img(src="../i/icons/i-4.svg", alt="")
+					.vertigoBlock__item2-text Возраст проявления может <br> быть любой, с возрастом <br> риски возникновения чаще.
+				.vertigoBlock__item2 
+					.vertigoBlock__item2-img 
+						img(src="../i/icons/i-5.svg", alt="")
+					.vertigoBlock__item2-text Женщины страдают в <br> два-три раза чаще,<br> чем у мужчин
+	
+	.section_in 
+		.vertigoCause
+			.vertigoCause__row 
+				.vertigoCause__col
+					.vertigoCause__img 
+						img(src="../i/icons/i-6.svg", alt="")
+					.vertigoCause__block-item
+						.vertigoCause__title 
+							h3 Головокружение сопровождает <br> многие заболевания
+							p часто жалобам на дезориентацию не уделяется отдельное внимание или, наоборот, пациенту назначают все варианты диагностики от МРТ до симптоматического лечения препаратами без ощутимого результата.
+						.vertigoCause__title.vertigoCause__title2 
+							h3 основная причина <br> головокружения 
+							p Это НЕ сосудистые патологии, артериальная гипертензия, остеохондроз, или "возраст"
+			.vertigoCause__row 
+				.boxDesck
+					.boxDesck__elem
+						.boxDesck__text <b> Самый частый фактор </b> возникновения подобных ощущений - патологии участков уха и головного мозга, отвечающие за сохранение равновесия и именно ДППГ (Доброкачественного Позиционного Пароксизмального Головокружения) 
+							a(href="#") + разворот.
+						.boxDesck__text.boxDesck__text2 Диагностика этой патологии простая, лечением является применение специальных физических маневров.
+					.boxDesck__img 
+						img(src="../i/old-woman.png", alt="")
+
+		.offer 
+			p Теперь решить данную проблему можно дома самостоятельно или при помощи ваших близких.
+
+	
+	.section_in 
+		.vertigoCause
+			.vertigoCause__row 
+				.vertigoCause__col
+					.vertigoCause__img 
+						img(src="../i/icons/i-7.svg", alt="")
+					.vertigoCause__block-item
+						.vertigoCause__title
+							p <b> СОВРЕМЕННЫЕ ТЕХНОЛОГИИ </b> всё больше позволяют врачам во всём мире мониторировать и создавать платформы для удалённой помощи и лечения пациентов.
+				
+				.vertigoCause__title-center Накопленные знания, наработки наших врачей, иностранных коллег по лечению головокружения и интеграция искусственного интеллекта в медицину позволили нам создать простое и понятное приложение для диагностики, лечения и профилактики головокружения в домашних условиях.
+
+
+	.section_in 
+		.scheme
+			h3 Многолетний опыт лечения головокружения в вашем смартфоне
+		.scheme__title
+			p Как это работает:
+		.scheme__row 
+			.scheme__col 
+				.scheme__img 
+					img(src="../i/icons/i-8.svg", alt="")
+				.scheme__text Искусственный интеллект <br> приложения АНАЛИЗИРУЕТ <br> движение Ваших глаз
+			.scheme__col 
+				.scheme__img 
+					img(src="../i/icons/i-9.svg", alt="")
+				.scheme__text СРАВНИВАЕТ Ваш индивидуальный профиль с профилями людей с различными заболеваниями
+			.scheme__col 
+				.scheme__img 
+					img(src="../i/icons/i-10.svg", alt="")
+				.scheme__text Специальный алгоритм ПОДБИРАЕТ безопасные упражнения для лечения головокружения Вашего типа
+		
+	.section_in
+		.downloadBlock
+			.downloadBlock__bg
+				.downloadBlock__row
+					.downloadBlock__img 
+						img(src="../i/man.png", alt="")
+					.downloadBlock__text <b> Система быстро обновляется </b> и добавляются новые данные, что делает диагностику и подбор упражнений максимально точными. В случае возникновения каких-либо сложностей в процессе диагностики, <b> приложение сможет порекомендовать вам врача.</b> И вы всегда и на любом этапе сможете сами записаться на очную или онлайн-консультацию по волнующему вас вопросу.
+				.downloadBlock__buttonBox 
+					.downloadBlock__btn 
+						a(href="#") Скачать
+					.downloadBlock__btn.downloadBlock__btn-white
+						a(href="#") Записаться на приём
+	
+	.section_in
+		.app 
+			.app__block 
+				.app__img 
+					img(src="../i/icons/i-11.svg", alt="")
+				.app__title 
+					h3 приложение
+				.app__list 
+					p - Не требует регистрации
+					p - Простое и логичное
+					p - Подходит для первичной диагностики головокружения
+					p - Возможность сразу приступить к лечению
+					p - Не требуется дополнительное оборудование или специальной подготовки
+				.app__text Эффективность подтверждена неоднократными контролируемыми исследованиями лечения и многолетним использованием предлагаемых манёвров по всему миру.
+		
+			.app__questions.questions 
+				.questions__title 
+					h3 Что я получу при <br> скачивании приложения?  
+				
+				.questions__block 
+					.questions__item <b> Бесплатную диагностику </b> <br> по движениям глаз
+					.questions__item <b> Бесплатный пакет </b> основных упражнений для улучшения состояния или полноценного избавления от головокружения
+					.questions__item <b> Набор рекомендаций </b> для  <br> вашего типа головокружения
+
+
+	.section_in
+		.reviews 
+			.reviews__title 
+				h2 МНЕНИЕ <br> ЭКСПЕРТОВ
+			.reviews__row 
+				.reviews__col 
+					.reviews__name Врач
+					.reviews__text данный подход к диагностике и лечению ДППГ успешно практикуется по всему миру уже много десятков лет, очень хорошо себя показал, но, к сожалению, до сих пор встречается гипердиагностика этой патологии или не знание азов работы с ней. Очень здорово, что благодаря этому приложению человек может сам подтвердить или опровергнуть диагноз и предпринять верные шаги для возвращения к нормальной жизни..
+
+				.reviews__col 
+					.reviews__name ПСИХОЛОГ
+					.reviews__text Методика проста и понята, понравилось, как она представлена в приложении, постепенно шаг за шагом ведёт тебя и даёт внятные рекомендации. В нашей практике встречаются психологические расстройства, сопровождающиеся жалобами на головокружение и очень важно исключить органическую природу этого симптома, а это приложение можно использовать как способ оценить соматическая проблема или нет.
+
+				.reviews__col 
+					.reviews__name Врач
+					.reviews__text Зарубежные наши коллеги уже начали использовать подобные практики или создают обучающие программы для пациентов, проводят онлайн тренинги или занятия для избавления от головокружения. Так что это методика зарекомендовавшая себя и без каких-либо рисков для пациента. Интересно использование ИИ для диагностики, такого не встречал пока где-либо ещё и, надо сказать, ИИ хорошо справляется со своей задачей. Быстро сканирует движения зрачков, возможно не заметные обычному человеку и способен выдавать по итогу достоверные результаты диагностики!
+
+			.reviews__box-button 
+				.reviews__button 
+					a(href="#") СКАЧАТЬ ПРИЛОЖЕНИЕ IOS
+				.reviews__button-border 
+					a(href="#") СКАЧАТЬ ПРИЛОЖЕНИЕ Google Play
+
+	.section_in
+		.team
+			.team__title 
+				h2 Наша команда:
+			.team__text Ведущие специалисты
+
+			.team__row 
+				.team__item 
+					.team__img 
+						img(src="../i/specialist-1.png", alt="")
+					.team__name Лев Брылев
+					.team__profession к. м.н. Врач-невролог
+				.team__item 
+					.team__img 
+						img(src="../i/specialist-1.png", alt="")
+					.team__name Лев Брылев
+					.team__profession к. м.н. Врач-невролог
+				.team__item 
+					.team__img 
+						img(src="../i/specialist-1.png", alt="")
+					.team__name Лев Брылев
+					.team__profession к. м.н. Врач-невролог
+			.team__more И еще более 40 врачей, инженеров и разработчиков
+	
+	.section_in
+		.partners 
+			.partners__title 
+				h2 наши партнеры:
+			.partners__slide 
+				.partners__item 
+					img(src="../i/partners-1.png", alt="")
+				.partners__item 
+					img(src="../i/partners-2.png", alt="")
+				.partners__item 
+					img(src="../i/partners-3.png", alt="")
+				.partners__item 
+					img(src="../i/partners-4.png", alt="")
+				.partners__item 
+					img(src="../i/partners-4.png", alt="")
+
+			
+
+			
+
+
+								

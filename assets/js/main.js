@@ -1,16 +1,16 @@
 $(document).ready(function() {
-    $('.partners-block__list').slick({
+    $('.partners__slide').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         dots: false,
         autoplay: true,
-        prevArrow: "<img src='i/icons/arrow-prev-black.svg' class='arrow-black prev3' alt='1'>",
-        nextArrow: "<img src='i/icons/arrow-next-black.svg' class='arrow-black next3' alt='2'>",
+        prevArrow: "<img src='i/icons/arrow-prev.svg' class='arrow-black prev' alt='1'>",
+        nextArrow: "<img src='i/icons/arrow-next.svg' class='arrow-black next' alt='2'>",
         responsive: [{
-                breakpoint: 1200,
+                breakpoint: 1600,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                     // arrows: false,
                     infinite: true,
