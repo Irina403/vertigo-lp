@@ -43,8 +43,8 @@ header {
 }
 
 .navItem {
-    margin-right: 2.6rem;
-    font-size: 1.8rem;
+    margin-right: 2.7rem;
+    font-size: 2rem;
     color: #4D4D4D;
     &:hover {
         text-decoration: underline;
@@ -101,9 +101,9 @@ header {
 }
 
 .menu-items a {
-    color: #000;
+    color: #4D4D4D;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: $font_2;
     transition: color 0.3s ease-in-out;
 }
@@ -257,7 +257,7 @@ header {
         z-index: 9999;
         padding-left: 50px;
         padding-top: 40px;
-        background-image: url(../i/menu-mobile.jpg);
+        background: #C7CBC4;
         color: $black;
         height: 100vh;
         max-width: 400px;

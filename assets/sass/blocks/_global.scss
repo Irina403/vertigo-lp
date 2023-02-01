@@ -37,13 +37,13 @@ h1 {
         padding-top: 10rem;
     }
     @include bp($point_4) {
-        font-size: 3.6rem;
+        font-size: 3.2rem;
         line-height: 4rem;
     }
-    @include bp($point_5) {
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-    }
+    // @include bp($point_5) {
+    //     font-size: 2.4rem;
+    //     line-height: 2.4rem;
+    // }
 }
 
 h2 {

@@ -20,6 +20,10 @@
         margin-top: 12px;
         font-size: 18px;
         font-family: $font_2;
+        @include bp($point_6) {
+            display: flex;
+            align-items: center;
+        }
     }
     &__item a {
         color: #000;

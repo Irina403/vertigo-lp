@@ -18,14 +18,23 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 780,
+                breakpoint: 830,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 420,
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
                     infinite: true,
                     dots: true
                 }
-            }
+            },
 
         ]
     });
